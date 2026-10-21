@@ -1,5 +1,3 @@
-import math
-
 def resolver_cuadratica(a_input, b_input, c_input):
     try:
         a = float(a_input)
@@ -25,9 +23,7 @@ def resolver_cuadratica(a_input, b_input, c_input):
         x = -b / (2*a)
         return f"Una raíz real doble: x = {x}"
     else:
-        x1 = (-b + math.sqrt(discriminante)) / (2*a)
-        x2 = (-b - math.sqrt(discriminante)) / (2*a)
-        return f"Dos raíces complejas: x1 = {x1}, x2 = {x2}"
+        return "Lógica de raíces complejas pendiente..."
 
 if __name__ == "__main__":
     print(" Calculadora de Ecuación Cuadrática (ax^2 + bx + c = 0) ")
